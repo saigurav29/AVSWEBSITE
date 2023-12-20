@@ -1,0 +1,70 @@
+<!-- <mat-card>
+    <mat-card-title>Login</mat-card-title>
+<mat-card-content>
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <p>
+    <mat-form-field appearance="outline">
+        <mat-label>UserName</mat-label>
+        <input type="text" matInput placeholder="Username" formControlName="username">
+    </mat-form-field>
+  </p>
+
+  <p>
+    <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+      <input type="password" matInput placeholder="Password" formControlName="password">
+    </mat-form-field>
+  </p>
+
+  <p *ngIf="error" class="error">
+    {{ error }}
+  </p>
+
+  <div class="button">
+    <button type="submit" mat-raised-button color="primary" mat-button>Login</button>
+  </div>
+
+</form>
+</mat-card-content>
+</mat-card> -->
+<mat-icon fontSet="material-icons-outlined">pie_chart</mat-icon>
+
+<div class="container">
+	<div class="screen">
+		<div class="screen__content">
+			<form class="login"  [formGroup]="form">
+				<div class="login__field">
+                    <mat-form-field appearance="outline">
+                        <mat-label>UserName</mat-label>
+                        <input type="text" matInput placeholder="Username" formControlName="username">
+                    </mat-form-field>
+				</div>
+				<div class="login__field">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Password</mat-label>
+                      <input type="password" matInput placeholder="Password" formControlName="password">
+                    </mat-form-field>
+				</div>
+				<button class="button login__submit" mat-raised-butto>
+					<span class="button__text">Log In Now</span>
+					<!-- <i class="button__icon fas fa-chevron-right"></i> -->
+                    <mat-icon class="button__icon">arrow_forward_ios</mat-icon>
+				</button>				
+			</form>
+			<!-- <div class="social-login">
+				<h3>log in via</h3>
+				<div class="social-icons">
+					<a href="#" class="social-login__icon fab fa-instagram"></a>
+					<a href="#" class="social-login__icon fab fa-facebook"></a>
+					<a href="#" class="social-login__icon fab fa-twitter"></a>
+				</div>
+			</div> -->
+		</div>
+		<div class="screen__background">
+			<span class="screen__background__shape screen__background__shape4"></span>
+			<span class="screen__background__shape screen__background__shape3"></span>		
+			<span class="screen__background__shape screen__background__shape2"></span>
+			<span class="screen__background__shape screen__background__shape1"></span>
+		</div>		
+	</div>
+</div>
